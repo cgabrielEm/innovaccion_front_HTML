@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página de administración de la pasteleria Pastel de Luna">
+    <meta name="author" content="Christian Gabriel Espino Magaña">
+    <meta name="generator" content="">
+    <title>Panel de Administración</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/dashboard.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/bootstrap/sidebars.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+            <a href="./dashboard.html" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                <svg class="bi me-2" width="30" height="24">
+                    <use xlink:href="#bootstrap" /></svg>
+                <span class="fs-5 fw-semibold">Pastel de Luna</span>
+            </a>
+            <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#home-collapse" aria-expanded="true">
+                        Inventario
+                    </button>
+                    <div class="collapse show" id="home-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="./dashboard.html" class="link-dark rounded">Gestionar</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#dashboard-collapse" aria-expanded="false">
+                        Estadisticos
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark rounded">Reportes</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#orders-collapse" aria-expanded="false">
+                        Pedidos
+                    </button>
+                    <div class="collapse" id="orders-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="./gestion_pedidos.html" class="link-dark rounded">Gestión de Pedidos</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="border-top my-3"></li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#account-collapse" aria-expanded="false">
+                        Cuenta de Usuario
+                    </button>
+                    <div class="collapse" id="account-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark rounded">Nuevo</a></li>
+                            <li><a href="#" class="link-dark rounded">Perfiles</a></li>
+                            <li><a href="#" class="link-dark rounded">Configuración</a></li>
+                            <li><a href="#" class="link-dark rounded">Salir de la sesión</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="b-example-divider"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Inventario de sabores</h2>
+                </div>
+                <div class="col-lg-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Código</th>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Descripción</th>
+                                <th scope="col">Stock Inicial</th>
+                                <th scope="col">Entradas</th>
+                                <th scope="col">Salidas</th>
+                                <th scope="col">Total</th>
+                            </tr>  
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">P001</th>
+                                <td>Chocolate</td>
+                                <td>Chocolate abuelita</td>
+                                <td>100</td>
+                                <td>23</td>
+                                <td>51</td>
+                                <td>72</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">P002</th>
+                                <td>Chocolate</td>
+                                <td>Chocolate abuelita</td>
+                                <td>100</td>
+                                <td>23</td>
+                                <td>51</td>
+                                <td>72</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">P001</th>
+                                <td>Chocolate</td>
+                                <td>Chocolate abuelita</td>
+                                <td>100</td>
+                                <td>23</td>
+                                <td>51</td>
+                                <td>72</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Inventario de adornos</h2>
+                </div>
+                <div class="col-lg-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Código</th>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Descripción</th>
+                                <th scope="col">Stock Inicial</th>
+                                <th scope="col">Entradas</th>
+                                <th scope="col">Salidas</th>
+                                <th scope="col">Total</th>
+                            </tr>  
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">A001</th>
+                                <td>Velas</td>
+                                <td>Vela economica de cera</td>
+                                <td>100</td>
+                                <td>23</td>
+                                <td>51</td>
+                                <td>72</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">A002</th>
+                                <td>Letreros</td>
+                                <td>Letrero comestible a base de chocolate</td>
+                                <td>100</td>
+                                <td>23</td>
+                                <td>51</td>
+                                <td>72</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">A003</th>
+                                <td>Obleas</td>
+                                <td>Oblea con dibujo de super heroe</td>
+                                <td>100</td>
+                                <td>23</td>
+                                <td>51</td>
+                                <td>72</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <script src="./assets/js/bootstrap/sidebars.js"></script>
+</body>
+
+</html>

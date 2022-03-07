@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página de administración de la pasteleria Pastel de Luna">
+    <meta name="author" content="Christian Gabriel Espino Magaña">
+    <meta name="generator" content="">
+    <title>Panel de Administración</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/dashboard.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/bootstrap/sidebars.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+            <a href="./dashboard.html" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                <svg class="bi me-2" width="30" height="24">
+                    <use xlink:href="#bootstrap" /></svg>
+                <span class="fs-5 fw-semibold">Pastel de Luna</span>
+            </a>
+            <ul class="list-unstyled ps-0">
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#home-collapse" aria-expanded="true">
+                        Inventario
+                    </button>
+                    <div class="collapse show" id="home-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="./dashboard.html" class="link-dark rounded">Gestionar</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#dashboard-collapse" aria-expanded="false">
+                        Estadisticos
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark rounded">Reportes</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#orders-collapse" aria-expanded="false">
+                        Pedidos
+                    </button>
+                    <div class="collapse" id="orders-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="./gestion_pedidos.html" class="link-dark rounded">Gestión de Pedidos</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="border-top my-3"></li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#account-collapse" aria-expanded="false">
+                        Cuenta de Usuario
+                    </button>
+                    <div class="collapse" id="account-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="#" class="link-dark rounded">Nuevo</a></li>
+                            <li><a href="#" class="link-dark rounded">Perfiles</a></li>
+                            <li><a href="#" class="link-dark rounded">Configuración</a></li>
+                            <li><a href="#" class="link-dark rounded">Salir de la sesión</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="b-example-divider"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Pedidos</h2>
+                </div>
+                <div class="col-lg-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">No. Pedido</th>
+                                <th scope="col">Día de entrega</th>
+                                <th scope="col">Descripción del pedido</th>
+                                <th scope="col">Telífono</th>
+                                <th scope="col">Nombre de quien recibe</th>
+                                <th scope="col">Dirección</th>
+                                <th scope="col">Status</th>
+                            </tr>  
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">00001</th>
+                                <td>Martes 08 de Marzo de 2022</td>
+                                <td>Pastel de chocolate de 1 a 7 personas con velas, decorado.</td>
+                                <td>554411003355</td>
+                                <td>Maria Nogales Perez</td>
+                                <td>Av. Pedregal 452 Col. Alvaro Obregon. CP 14578 CDMX</td>
+                                <td>Por entregar</td>
+                            </tr>   
+                            <tr>
+                                <th scope="row">00002</th>
+                                <td>Miercoles 09 de Marzo de 2022</td>
+                                <td>Pastel de 3 leches de 1 a 7 personas con velas, decorado.</td>
+                                <td>45621265456</td>
+                                <td>Luis Alberto Martinez</td>
+                                <td>Miguel Hidalgo 447 int 3 Col. La Esperanza. CP 19578 EDOMEX</td>
+                                <td>En preparación</td>
+                            </tr>                          
+                        </tbody>
+                    </table>
+                </div>
+            </div>            
+        </div>
+    </main>
+    <script src="./assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/bootstrap/sidebars.js"></script>
+</body>
+
+</html>
